@@ -32,3 +32,19 @@ function getComputerChoice() {
 - convert their answer to be case insensitive
 - if their input is not rock, paper, or scissors, rerun the function
 */
+
+let humanChoice;
+
+function getHumanChoice () {
+    userInput = prompt("Type rock, paper, or scissors: ").trim().toLowerCase();
+    if (userInput == "rock") {
+        return humanChoice = "rock";
+    } else if (userInput == "paper") {
+        return humanChoice = "paper"
+    } else if (userInput == "scissors") {
+        return humanChoice = "scissors"
+    } else {
+        alert("We didn't quite get that, please type either: rock, paper, or scissors!")
+        return getHumanChoice();
+    }
+}
