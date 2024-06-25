@@ -52,3 +52,23 @@ function getHumanChoice () {
 // Step 4: Hold the computer and users scores
 let humanScore = 0;
 let computerScore = 0;
+
+// Step 5: Write the logic to play a single round
+/* PSEUDOCODE
+- write a new function that compares the computers choice and users choice
+- if the user picked rock, and the computer picked paper
+    - say "computer won" and increment computers score
+- if the user picked rock, and the computer picked scissors
+    - say "you won" and increment users score
+- paper
+- if the user picked paper, and the computer picked rock
+    - say "you won" and increment users score
+- if the user picked paper, and the computer picked scissors
+    - say "computer won" and increment computers score
+- scissors
+- if the user picked scissors, and the computer picked rock
+    - say "computer won" and increment computers score
+- if the user picked scissors, and the computer picked paper
+    - say "you won" and increment users score
+- if they chose the same thing, say draw, and rerun the function
+*/
