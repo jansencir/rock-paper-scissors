@@ -48,3 +48,7 @@ function getHumanChoice () {
         return getHumanChoice();
     }
 }
+
+// Step 3: Hold the computer and users scores
+let humanScore = 0;
+let computerScore = 0;
