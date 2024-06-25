@@ -23,3 +23,12 @@ function getComputerChoice() {
         return computerChoice;
     }
 }
+
+// Step 3: Write logic to get human choice
+/* PSEUDOCODE
+- create a variable to hold the users choice in the global scope
+- prompt the user to type rock, paper, or scissors
+- remove any blank space from both sides of the input
+- convert their answer to be case insensitive
+- if their input is not rock, paper, or scissors, rerun the function
+*/
