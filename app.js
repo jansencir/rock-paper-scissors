@@ -27,3 +27,8 @@ function getHumanChoice() {
         getHumanChoice();
     }
 }
+
+
+// STEP 4: Declare the players score variable
+let humanScore = 0;
+let computerScore = 0;
