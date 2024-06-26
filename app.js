@@ -65,3 +65,25 @@ function playRound(human, computer) {
 // const computerSelection = getComputerChoice();
 
 // playRound(humanSelection, computerSelection);
+
+
+// STEP 6: Write the logic to play 5 rounds of rock paper scissors
+// Play 5 rounds of rock paper scissors and return a winner at the end
+function playGame() {
+    for (i=1; i < 6; i++) {
+        console.log(`Round ${i}`)
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection);
+    }
+    if (humanScore > computerScore) {
+        console.log("Winner! You Beat the Computer!")
+    } else if (humanScore < computerScore) {
+        console.log("Loser! The Computer Beat You!")
+    } else if (humanScore === computerScore) {
+        console.log("Tie! Looks Like We Have a Draw!")
+    }
+}
+
+
+playGame();
