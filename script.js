@@ -97,3 +97,9 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
+
+// Step 6: Write the logic to play the entire game
+/* PSEUDOCODE
+- Play the game for 5 rounds
+- while the counter is less than or equal to 5, call the playRound function
+*/
