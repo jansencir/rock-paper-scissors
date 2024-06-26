@@ -10,3 +10,20 @@ function getComputerChoice() {
         return "scissors";
     }
 }
+
+
+// STEP 3: Logic to Get the Users Choice
+// Function that asks the user for their choice, make their choice case insensitive
+function getHumanChoice() {
+    let humanChoice = prompt("What do you choose: rock, paper, or scissors? ").trim().toLowerCase();
+    if (humanChoice == "rock") {
+        return "rock";
+    } else if (humanChoice == "paper") {
+        return "paper";
+    } else if (humanChoice == "scissors") {
+        return "scissors";
+    } else {
+        alert("We didn't quite get that.")
+        getHumanChoice();
+    }
+}
