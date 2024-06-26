@@ -8,9 +8,8 @@
 - for numbers 0.6668 and 1 return scissors
 */
 
-let computerChoice;
-
 function getComputerChoice() {
+    let computerChoice;
     computerNumber = Math.random()
     if (computerNumber >= 0 && computerNumber <= 0.3333) {
         computerChoice = "rock";
@@ -33,16 +32,14 @@ function getComputerChoice() {
 - if their input is not rock, paper, or scissors, rerun the function
 */
 
-let humanChoice;
-
 function getHumanChoice () {
-    userInput = prompt("Type rock, paper, or scissors: ").trim().toLowerCase();
-    if (userInput == "rock") {
-        return humanChoice = "rock";
-    } else if (userInput == "paper") {
-        return humanChoice = "paper"
-    } else if (userInput == "scissors") {
-        return humanChoice = "scissors"
+    let humanChoice = prompt("Type rock, paper, or scissors: ").trim().toLowerCase();
+    if (humanChoice == "rock") {
+        return humanChoice;
+    } else if (humanChoice == "paper") {
+        return humanChoice;
+    } else if (humanChoice == "scissors") {
+        return humanChoice;
     } else {
         alert("We didn't quite get that, please type either: rock, paper, or scissors!")
         return getHumanChoice();
@@ -96,10 +93,18 @@ function playRound(human, computer) {
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
-
 // Step 6: Write the logic to play the entire game
 /* PSEUDOCODE
 - Play the game for 5 rounds
 - while the counter is less than or equal to 5, call the playRound function
 */
+
+function playGame() {
+    let i = 0;
+    while (i < 5) {
+        playRound(humanSelection, computerSelection);
+        ++i;
+    }
+}
+
+playGame();
