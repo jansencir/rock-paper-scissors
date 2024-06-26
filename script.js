@@ -72,3 +72,28 @@ let computerScore = 0;
     - say "you won" and increment users score
 - if they chose the same thing, say draw, and rerun the function
 */
+
+function playRound(human, computer) {
+    if (
+        (human === "rock" && computer === "scissors") ||
+        (human === "paper" && computer === "rock") ||
+        (human === "scissors" && computer === "paper")
+    ) {
+        alert("You win!")
+        return ++humanScore;
+    } else if (
+        (human === "rock" && computer === "paper") ||
+        (human === "paper" && computer === "scissors") ||
+        (human === "scissors" && computer === "rock")
+    ) {
+        alert("You lose!")
+        return ++computerScore;
+    } else if (human === computer) {
+        alert("Tie! No winner!");
+    }
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
