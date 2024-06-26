@@ -100,11 +100,8 @@ const computerSelection = getComputerChoice();
 */
 
 function playGame() {
-    let i = 0;
-    while (i < 5) {
+    for (i = 1; i <= 5; i++)
         playRound(humanSelection, computerSelection);
-        ++i;
-    }
 }
 
 playGame();
