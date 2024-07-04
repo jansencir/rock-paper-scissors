@@ -1,4 +1,10 @@
-body {
-    background-color: slategrey;
-    color: white;
+/* COLOR CODES */
+/* DARK-PURPLE: #4E31AA; */
+/* DARK-BLUE: #2F58CD; */
+/* SUPER-DARK-BLUE: #13005A; */
+/* DARK-GREY: #2D3250; */
+/* MODERATE-GREY: #424769; */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
