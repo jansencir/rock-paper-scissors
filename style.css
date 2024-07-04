@@ -21,23 +21,27 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: #CCCCFF;
     height: 20%;
     gap: 15px;
 }
 
 h1.title {
-    color: #4E31AA;
+    color: black;
+    font-size: 42px;
 }
 
 p.title {
     color: #2F58CD;
+    font-size: 18px;
 }
 
 /* MAIN */
 main {
-    background-color: #2D3250;
+    background-color: #E3CCFF;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     height: 80%;
 }
