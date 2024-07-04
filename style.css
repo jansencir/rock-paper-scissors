@@ -45,3 +45,28 @@ main {
     align-items: center;
     height: 80%;
 }
+
+/* SCOREBOARD */
+div.scoreboard {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+div.scoreHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 2px solid red;
+    height: 150px;
+    width: 150px;
+    justify-content: space-around;
+}
+
+div.scoreImg {
+    font-size: 80px;
+}
+
+p.score {
+    font-size: 18px;
+}
