@@ -5,21 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!-- <script src="./script.js"></script> -->
-    <script src="./app.js"></script>
+    <script src="./app.js" defer></script>
     <title>Rock Paper Scissors</title>
 </head>
 
 <body>
-    
-    <h1>Rock Paper Scissors</h1>
-    <p>Play it in the console</p>
+    <header>
+        <h1 class="title">Play Rock Paper Scissors!</h1>
+        <p class="title">...with a computer.</p>
+    </header>
 
-    <div class="gameButtons">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-    </div>
+    <main>
+        <h2 class="play">Make Your Choice to Start!</h2>
+        <p class="play">First to 5 Points Wins</p>
+
+        <div class="scoreboard">
+            <div class="humanScore" id="holdScore">
+                <div class="humanScore" id="imgScore">🗿</div>
+                <p class="humanScore" id="countScore"></p>
+            </div class="computerScore" id=holdScore>
+                <div class="computerScore" id="imgScore">💻</div>
+                <p class="computerScore" id="countScore"></p>
+            </div>
+        </div>
+
+        <div class="gameButtons">
+            <!-- ROCK -->
+            <button id="rock">
+                <div id="gameSign">🪨</div>
+            </button>
+            <!-- PAPER -->
+            <button id="paper">
+                <div id="gameSign">📄</div>
+            </button>
+            <!-- SCISSORS -->
+            <button id="scissors">
+                <div id="gameSign">✂️</div>
+            </button>
+        </div>
+    </main>
 
 </body>
 
