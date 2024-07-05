@@ -25,7 +25,7 @@ p.title {
 
 /* MAIN */
 div.play {
-    padding: 40px 0;
+    margin: 50px 0;
 }
 
 h2.play {
@@ -34,4 +34,24 @@ h2.play {
 
 p.play {
     font-size: 22px;
+}
+
+div.scoreboard {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    gap: 60px;
+}
+
+div.scoreHolder {
+    height: 140px;
+    width: 140px;
+}
+
+div.scoreImg {
+    font-size: 80px;
+}
+
+p.score {
+    font-size: 20px;
 }
