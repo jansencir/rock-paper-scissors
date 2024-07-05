@@ -16,7 +16,7 @@ body {
 }
 
 h1.title {
-    font-size: 36px;
+    font-size: 44px;
 }
 
 p.title {
@@ -29,7 +29,7 @@ div.play {
 }
 
 h2.play {
-    font-size: 28px;
+    font-size: 30px;
 }
 
 p.play {
@@ -44,16 +44,16 @@ div.scoreboard {
 }
 
 div.scoreHolder {
-    height: 140px;
-    width: 140px;
+    height: 150px;
+    width: 150px;
 }
 
 div.scoreImg {
-    font-size: 80px;
+    font-size: 90px;
 }
 
 p.score {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 div.gameButtons {
@@ -63,10 +63,10 @@ div.gameButtons {
 }
 
 .btn {
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
 }
 
 .choice {
-    font-size: 65px;
+    font-size: 70px;
 }
