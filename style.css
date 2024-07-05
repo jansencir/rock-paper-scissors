@@ -22,3 +22,16 @@ h1.title {
 p.title {
     font-size: 18px;
 }
+
+/* MAIN */
+div.play {
+    padding: 40px 0;
+}
+
+h2.play {
+    font-size: 28px;
+}
+
+p.play {
+    font-size: 22px;
+}
