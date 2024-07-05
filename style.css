@@ -55,3 +55,18 @@ div.scoreImg {
 p.score {
     font-size: 20px;
 }
+
+div.gameButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    width: 100px;
+    height: 100px;
+}
+
+.choice {
+    font-size: 65px;
+}
