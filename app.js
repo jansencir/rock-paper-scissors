@@ -1,5 +1,4 @@
-// STEP 2: Logic to Get the Computer Choice
-// Function should return either rock, paper, or scissors
+// Logic to Get the Computer Choice
 function getComputerChoice() {
     computerChoice = Math.floor(Math.random()*3);
     let choice;
@@ -14,10 +13,8 @@ function getComputerChoice() {
 }
 
 
-// STEP 3: Logic to Get the Users Choice
-// Function that asks the user for their choice, make their choice case insensitive
-function getHumanChoice() {
-    let humanChoice = prompt("What do you choose: rock, paper, or scissors? ").trim().toLowerCase();
+// Logic to Get the Users Choice
+function getHumanChoice(humanChoice) {
     if (humanChoice === "rock") {
         return "rock";
     } else if (humanChoice === "paper") {
@@ -31,14 +28,12 @@ function getHumanChoice() {
 }
 
 
-// STEP 4: Declare the players score variable
+// Declare the players score variable
 let humanScore = 0;
 let computerScore = 0;
 
 
-// STEP 5: Play a single round of rock, paper, scissors
-// Function needs to compare the user and computers choice and return a winner, then increment their score by 1 point
-// Remember ties in rock paper scissors are a thing
+// Play a single round of rock, paper, scissors
 function playRound(human, computer) {
     if (human === computer) {
         console.log("It was a tie, you and the computer chose the same thing!");
