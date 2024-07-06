@@ -1,4 +1,4 @@
-// Logic to Get the Computer Choice
+// Logic to get the computer choice
 function getComputerChoice() {
     computerChoice = Math.floor(Math.random()*3);
     let choice;
@@ -12,23 +12,7 @@ function getComputerChoice() {
     return choice;
 }
 
-
-// Logic to Get the Users Choice
-// function getHumanChoice(humanChoice) {
-//     if (humanChoice === "rock") {
-//         return "rock";
-//     } else if (humanChoice === "paper") {
-//         return "paper";
-//     } else if (humanChoice === "scissors") {
-//         return "scissors";
-//     } else {
-//         alert("We didn't quite get that.")
-//         getHumanChoice();
-//     }
-// }
-
-
-// Declare the players score variable
+// Hold players score
 let humanScore = 0;
 let computerScore = 0;
 
@@ -44,7 +28,7 @@ const rockBtn = document.getElementById("rock");
 const paperBtn = document.getElementById("paper");
 const scissorsBtn = document.getElementById("scissors");
 
-// Play a single round of rock, paper, scissors
+// Play a round of rock, paper, scissors
 function playRound(human) {
     const computer = getComputerChoice();
 
@@ -73,27 +57,7 @@ function playRound(human) {
     gameOver();
 };
 
-// Game Over Check
-// function disableBtn() {
-//     rockBtn.disabled = true;
-//     paperBtn.disabled = true;
-//     scissorsBtn.disabled = true;
-// }
-
-// function gameOver() {
-//     if (humanScore === 5) {
-//         gameButtons.disabled = true;
-//         playHeader.textContent = "GAME OVER";
-//         playPara.textContent = "Congrats, you beat the computer!";
-//     }
-//     if (computerScore === 5) {
-//         gameButtons.disabled = true;
-//         playHeader.textContent = "GAME OVER";
-//         playPara.textContent = "Looks like you lose to the computer...";
-//     }
-// };
-
-
+// Game over check
 function gameOver() {
     if (humanScore === 5 || computerScore === 5) {
         rockBtn.disabled = true;
@@ -108,30 +72,6 @@ function gameOver() {
         }
 };
 
-
-
-
-// STEP 6: Write the logic to play 5 rounds of rock paper scissors
-// Play 5 rounds of rock paper scissors and return a winner at the end
-// function playGame() {
-//     for (i=1; i < 6; i++) {
-//         console.log(`Round ${i}`)
-//         const humanSelection = getHumanChoice();
-//         const computerSelection = getComputerChoice();
-//         playRound(humanSelection, computerSelection);
-//     }
-//     if (humanScore > computerScore) {
-//         console.log("Winner! You Beat the Computer!")
-//     } else if (humanScore < computerScore) {
-//         console.log("Loser! The Computer Beat You!")
-//     } else if (humanScore === computerScore) {
-//         console.log("Tie! Looks Like We Have a Draw!")
-//     }
-// }
-
-
-// playGame();
-// COMMENT OUT FOR NOW
 
 rockBtn.addEventListener("click", () => playRound("rock"));
 paperBtn.addEventListener("click", () => playRound("paper"));
