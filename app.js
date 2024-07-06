@@ -39,9 +39,10 @@ const playerScore = document.getElementById("humanScore");
 const compScore = document.getElementById("compScore");
 
 // Buttons
-const rockBtn = document.getElementById("rockBtn");
-const paperBtn = document.getElementById("paperBtn");
-const scissorsBtn = document.getElementById("scissorsBtn");
+const gameButtons = document.querySelector(".btn");
+const rockBtn = document.getElementById("rock");
+const paperBtn = document.getElementById("paper");
+const scissorsBtn = document.getElementById("scissors");
 
 // Play a single round of rock, paper, scissors
 function playRound(human) {
@@ -69,7 +70,45 @@ function playRound(human) {
         ++computerScore;
         compScore.textContent = `Computer: ${computerScore}`;
     }
-}
+    gameOver();
+};
+
+// Game Over Check
+// function disableBtn() {
+//     rockBtn.disabled = true;
+//     paperBtn.disabled = true;
+//     scissorsBtn.disabled = true;
+// }
+
+// function gameOver() {
+//     if (humanScore === 5) {
+//         gameButtons.disabled = true;
+//         playHeader.textContent = "GAME OVER";
+//         playPara.textContent = "Congrats, you beat the computer!";
+//     }
+//     if (computerScore === 5) {
+//         gameButtons.disabled = true;
+//         playHeader.textContent = "GAME OVER";
+//         playPara.textContent = "Looks like you lose to the computer...";
+//     }
+// };
+
+
+function gameOver() {
+    if (humanScore === 5 || computerScore === 5) {
+        rockBtn.disabled = true;
+        paperBtn.disabled = true;
+        scissorsBtn.disabled = true;
+        playHeader.textContent = "GAME OVER";
+        if (humanScore === 5) {
+            playPara.textContent = "Congrats, you beat the computer!"; }
+        }
+        if (computerScore === 5) {
+            playPara.textContent = "Looks like you lose to the computer...";
+        }
+};
+
+
 
 
 // STEP 6: Write the logic to play 5 rounds of rock paper scissors
