@@ -45,9 +45,9 @@ const scissorsBtn = document.getElementById("scissorsBtn");
 
 // Play a single round of rock, paper, scissors
 function playRound(human) {
-    const computerChoice = getComputerChoice();
+    const computer = getComputerChoice();
 
-    if (human === computerChoice) {
+    if (human === computer) {
         playHeader.textContent = "It was a tie!";
         playPara.textContent = `You and the computer both chose ${human}`;
     } else if (
@@ -55,26 +55,21 @@ function playRound(human) {
         (human === "paper" && computer === "rock") ||
         (human === "scissors" && computer === "paper")
     ) {
-        playHeader.textContent = "You won!"
-        console.log(`You won! ${human} beats ${computer}!`);
+        playHeader.textContent = "You won!";
+        playPara.textContent = (`${human} beats ${computer}!`);
         ++humanScore;
-        console.log(`You: ${humanScore} | Computer: ${computerScore}`);
-
+        playerScore.textContent = `Player: ${humanScore}`
     } else if (
         (human === "rock" && computer === "paper") ||
         (human === "paper" && computer === "scissors") ||
         (human === "scissors" && computer === "rock")
     ) {
-        console.log(`You lost! ${human} loses to ${computer}`);
+        playHeader.textContent = "You lost!";
+        playPara.textContent = `${human} loses to ${computer}`;
         ++computerScore;
-        console.log(`You: ${humanScore} | Computer: ${computerScore}`);
+        compScore.textContent = `Computer: ${computerScore}`;
     }
 }
-
-// const humanSelection = getHumanChoice();
-// const computerSelection = getComputerChoice();
-
-// playRound(humanSelection, computerSelection);
 
 
 // STEP 6: Write the logic to play 5 rounds of rock paper scissors
@@ -99,3 +94,6 @@ function playRound(human) {
 // playGame();
 // COMMENT OUT FOR NOW
 
+rockBtn.addEventListener("click", () => playRound("rock"));
+paperBtn.addEventListener("click", () => playRound("paper"));
+scissorsBtn.addEventListener("click", () => playRound("scissors"));
